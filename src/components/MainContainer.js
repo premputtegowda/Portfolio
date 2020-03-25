@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   },
   bottom:{
     display: 'flex',
-    // alignItems: 'center',
+    alignItems: 'center',
     // flexDirection:'column',
     justifyContent:'flex-end',
     height:'100vh',
@@ -53,13 +53,12 @@ export default function MainContainer() {
       <CssBaseline />
       <Container maxWidth='lg'>
       <Grid container>
-        <Grid item xs={12} sm={3}>
-        </Grid>
+        
         <Grid item xs={12} sm={6} className={classes.bottom}>
           <img src={process.env.PUBLIC_URL + '/prem_portfolio_2.png'} className={classes.img} />
         
         </Grid>
-        <Grid item xs={12} sm={3} className={classes.center}>
+        <Grid item xs={12} sm={6} className={classes.center}>
          
         
           <div >
