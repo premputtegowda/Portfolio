@@ -21,7 +21,7 @@ export default function Header() {
               </span>
     
           </h1>
-          <a href="#" className="btn btn-white btn-animated">Continue</a>
+          <a href="google.com" className="btn btn-white btn-animated">Continue</a>
       </div>
     </header>
   );
