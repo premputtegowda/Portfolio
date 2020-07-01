@@ -93,18 +93,18 @@ Dark green: #28b485
                         
 }
 
-.logo-container {
+.header__logo-container {
     position: absolute;
     top: 4rem;
     left: 4rem;
 
 }
 
-.logo {
+.header__logo {
     height:3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position:absolute;
     top:40%;
     left:50%;
@@ -121,7 +121,7 @@ Dark green: #28b485
     
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display:block;
     font-size: 4rem;
     font-weight:400;
@@ -131,7 +131,7 @@ Dark green: #28b485
     animation-timing-function: ease-out;
 
 }
-.heading-primary-sub{
+.heading-primary--sub{
     display:block;
     font-size:2rem;
     font-weight:700;
@@ -206,7 +206,7 @@ Dark green: #28b485
   
    
 }
-.btn-white {
+.btn--white {
     background-color: #fff;
     color:#777;
     padding:1rem 4rem;
@@ -235,7 +235,7 @@ Dark green: #28b485
     transition:all .4s;
 }
 
-.btn-white::after{
+.btn--white::after{
     background-color: #fff;
 }
 
@@ -244,7 +244,7 @@ Dark green: #28b485
     opacity:0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }

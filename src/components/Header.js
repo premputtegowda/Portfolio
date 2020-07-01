@@ -7,21 +7,21 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <div className="logo-container">
-        <img src={Logo} alt="Prem logo" className='logo'/>
+      <div className="header__logo-container">
+        <img src={Logo} alt="Prem logo" className='header__logo'/>
       </div>
 
-      <div className='text-box'>
+      <div className='header__text-box'>
           <h1 className="heading-primary">
-              <span className="heading-primary-main">
+              <span className="heading-primary--main">
                 Prem Puttegowda
               </span>
-              <span className="heading-primary-sub">
-                  fullstack developer
+              <span className="heading-primary--sub">
+                  fullstack software engineer
               </span>
     
           </h1>
-          <a href="/" className="btn btn-white btn-animated">Continue</a>
+          <a href="/" className="btn btn--white btn--animated">Continue</a>
       </div>
     </header>
   );

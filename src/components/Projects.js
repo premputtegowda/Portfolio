@@ -1,37 +1,68 @@
-import React, {useState} from 'react';
-import ProjectCard from './ProjectCard'
+import React from 'react';
+import { GiRegeneration } from "react-icons/gi";
+import { GiFarmTractor } from "react-icons/gi";
+import { GiTicket } from "react-icons/gi";
+import { FaVideo } from "react-icons/fa";
 
-import Grid from '@material-ui/core/Grid';
 
 
-import data from "../data/data"
+// import data from "../data/data"
 
 function Projects () {
-    console.log(data);
-    const [count, setCount] = useState(1000)
+   
     return (
-    <div>
-        {/* <Grid container spacing={2}>
-            <Grid item xs={1}/>
-                <Grid item xs={10}>
-                <Grid item container xs={12} spacing={3}>
-                    
-
-                    {data.map(data => (
-                        
-                        <Grid item xs={12} sm={4}>
-                            
-                        
-                                <ProjectCard key={Date.now()} data={data}/>
-                        
-                        </Grid>
-                    ) )}
-                    
-                </Grid>
-                </Grid>
-            <Grid item xs={1}/>
-        </Grid> */}
-    </div>
+    <section className='section-projects'>
+        <div className="row">
+            <div className="col-1-of-4">
+                <div className="project-box">
+                <i className="project-box__icon"> <FaVideo /></i>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Team Reel
+                    </h3>
+                    <p className="project-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
+                    </p>
+                </div>
+            </div>
+            <div className="col-1-of-4">
+                
+                <div className="project-box">
+                <i className="project-box__icon"> <GiTicket /></i>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Dev Desk Queue
+                    </h3>
+                    <p className="project-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
+                    </p>
+                </div>
+            </div>
+            <div className="col-1-of-4">
+                <div className="project-box">
+                    <i className="project-box__icon">< GiRegeneration /></i>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Game of Life
+                    </h3>
+                    <p className="project-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
+                    </p>
+                </div>
+            </div>
+            <div className="col-1-of-4">
+                <div className="project-box">
+                
+                <i className="project-box__icon">< GiFarmTractor /></i>
+                    <h3 className="heading-tertiary u-margin-bottom-small">
+                        Dev Desk Queue
+                    </h3>
+                    <p className="project-box__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </section>
     )
 
 }
