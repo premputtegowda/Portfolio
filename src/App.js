@@ -4,6 +4,7 @@ import Header from './components/Header'
 import About from './components/About'
 import Projects from './components/Projects'
 import Project from './components/Project'
+import Contact from './components/Contact'
 
 
 //components
@@ -25,6 +26,7 @@ function App() {
             <About />
             <Projects />
             <Project />
+            <Contact />
          </div>
       
   

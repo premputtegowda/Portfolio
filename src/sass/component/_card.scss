@@ -2,10 +2,10 @@
     perspective: 1500px;
     -moz-perspective: 1500px;
     position:relative;
-    height: 40rem;
+    height: 35rem;
    &__side{
     background-color: orangered;
-    height: 40rem;
+    height: 35rem;
     width:100%;
     transition: all .8s ease;
     position:absolute;
@@ -15,17 +15,29 @@
     border-radius: 3px;
     overflow:hidden;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    &--front {
-        background-color:$color-white;
-        
-    }
-    &--back {
-        
-        transform: rotateY(180deg);
-        
-        &-1{
+        &--front {
             background-color:$color-white;
+        
         }
+        &--back {
+        
+            transform: rotateY(180deg);
+        
+            
+        &-1 {
+            background-image: linear-gradient(to right bottom, $color-purple-1,rgba($color-purple-2,.7));
+        }
+        &-2 {
+            background-image: linear-gradient(to right bottom, $color-blue-1,rgba($color-blue-2,.7));
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, $color-blackish-1,rgba($color-blackish-2,.7));
+        }
+
+        
+
+
     }
     
    }
@@ -34,7 +46,7 @@
 
     &:hover &__side--front{
 
-        transform: rotateY(180deg)
+        transform: rotateY(-180deg)
     }
     &:hover &__side--back{
 
@@ -44,26 +56,75 @@
     &__picture {
         height:15rem;
         background-blend-mode: soft-light;
+        -webkit-clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
+        clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
+        background-size:cover;
 
         &-1{
-            background-image: linear-gradient(to right bottom, $color-purple-1,$color-purple-2), url('../../static/team_reel.png');
-            background-size:cover;
-            -webkit-clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
-            clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
+            background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8)), url('../../static/team_reel.png');
+            
+           
+        }
+
+        &-2{
+            background-image: linear-gradient(to right bottom, rgba($color-blue-1,.2),rgba($color-blue-2,.8)), url('../../static/theQueue.png');
+           
+        }
+        &-3{
+            background-image: linear-gradient(to right bottom, rgba($color-blackish-1,.2),rgba($color-blackish-2,.8)), url('../../static/game.png');
+           
         }
     }
     &__heading {
         font-size: 2rem;
         font-weight:300;
+        color:$color-white;
+        text-align: right;
         text-transform: uppercase;
         position:absolute;
-        top:10rem;
+        top:6rem;
         right:2rem;
+        width:40%;
+        
+        &-span{
+            box-decoration-break: clone;
+            padding: .5rem .5rem;
+            
+            &--1{
+                background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8));
+            }
+            &--2{
+                background-image: linear-gradient(to right bottom, rgba($color-blue-1,.2),rgba($color-blue-2,.8));
+            }
+            &--3{
+                background-image: linear-gradient(to right bottom, rgba($color-blackish-1,.2),rgba($color-blackish-2,.8));
+            }
+            &--4{
+                background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8));
+            }
+            
+        }
+
         
 
-    }
-    // &:__details {
 
-    // }
+    }
+    &__details {
+        text-align: center;
+        margin:0 auto;
+        
+        font-size:1.5rem;   
+        width:80%;
+        padding: 1.5rem 1rem;
+    }
+
+    &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
     
 }

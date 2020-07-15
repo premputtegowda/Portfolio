@@ -17,7 +17,7 @@ function Projects () {
                 <div className="project-box">
                 <i className="project-box__icon"> <FaVideo /></i>
                     <h3 className="heading-tertiary u-margin-bottom-small">
-                        Team Reel
+                        PayPal Inc.,
                     </h3>
                     <p className="project-box__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
@@ -29,7 +29,7 @@ function Projects () {
                 <div className="project-box">
                 <i className="project-box__icon"> <GiTicket /></i>
                     <h3 className="heading-tertiary u-margin-bottom-small">
-                        Dev Desk Queue
+                        eBay Inc.,
                     </h3>
                     <p className="project-box__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
@@ -40,7 +40,7 @@ function Projects () {
                 <div className="project-box">
                     <i className="project-box__icon">< GiRegeneration /></i>
                     <h3 className="heading-tertiary u-margin-bottom-small">
-                        Game of Life
+                        AT&T
                     </h3>
                     <p className="project-box__text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolorem cumque velit, rem dolor vitae molestiae placeat ut harum rerum cupiditate laboriosam asperiores inventore, accusantium recusandae temporibus explicabo officia doloribus.
