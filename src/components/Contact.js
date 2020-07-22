@@ -45,7 +45,7 @@ const Contact = () => {
                         
                             </div>
                             <div className="form-group">
-                                <button className="btn btn--white u-margin-bottom-medium">Send</button>
+                                <button className="btn btn--black u-margin-bottom-medium">Send</button>
                             </div>
                         </form>
                     </div>
