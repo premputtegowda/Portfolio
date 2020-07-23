@@ -5,7 +5,7 @@ import prem_img from '../static/prem.png'
 function About(){
 
     return(
-        <section className='section-about'>
+        <section className='section-about' id="section-about">
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className='heading-secondary'>About Me</h2>
             </div>

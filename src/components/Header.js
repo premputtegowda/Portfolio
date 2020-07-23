@@ -21,7 +21,10 @@ export default function Header() {
               </span>
     
           </h1>
-          <a href="/" className="btn btn--white btn--animated">Continue</a>
+          
+          
+            <a href="#section-about" className="btn btn--white btn--animated">About Me</a>
+      
       </div>
     </header>
   );
