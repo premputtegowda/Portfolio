@@ -3,10 +3,26 @@
     margin-top: -20vh;
     background:$color-grey-light;
     z-index: 10;
+    
 }
  
 //should be experience
 .section-projects {
+    padding: 20rem 0;
+    background-image: linear-gradient(to right,$color-primary-light,$color-black);
+    background-size: cover;
+    background-position: top;
+    transform: skewY(-7deg);
+    margin-top:-10rem;
+    z-index:5;
+
+  
+    & > * {
+        transform:skewY(7deg)
+    }
+}
+
+.section-skills {
     padding: 20rem 0;
     background-image: linear-gradient(to right,$color-primary-light,$color-black);
     background-size: cover;
