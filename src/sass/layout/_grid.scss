@@ -1,8 +1,10 @@
 .row {
     max-width:$grid-width;
     margin: 0 auto;
+    
     @include respond(tab-port){
         max-width: 50rem;
+        margin-bottom:$gutter-vertical-small;
     }
     &:not(:last-child){
         margin-bottom: $gutter-vertical;

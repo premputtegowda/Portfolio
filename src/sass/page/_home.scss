@@ -20,11 +20,19 @@
     & > * {
         transform:skewY(7deg)
     }
+    @include respond(tab-port){
+        padding:10rem;
+    }
 }
 
 .section-work {
     padding:5rem 0;
+   
     background-color:$color-grey-light;
+
+    @include respond(tab-port){
+        padding-bottom:5rem;
+    }
 }
 
 .section-skills {
@@ -40,12 +48,19 @@
     & > * {
         transform:skewY(7deg)
     }
+    @include respond(tab-port){
+        padding:5rem;
+    }
 }
 
 .section-project {
     background:$color-grey-light;
-    padding: 35rem 0 20rem 0;
+    padding: 25rem 0 20rem 0;
     margin-top: -20rem;
+
+    @include respond(tab-port){
+        padding-bottom:5rem;
+    }
          
 }
 
@@ -69,16 +84,43 @@
         rgba($color-white,.9) 50%,
         transparent 50%),
         url('../../static/contact.jpg');
-    background-size: 100%;
+    background-size: cover;
     
     background-repeat: no-repeat;
-    height: 60rem;
+    // height: 60rem;
     border-radius: 3px;
     box-shadow: 0px 3rem 6rem;
+
+    @include respond(tab-land){
+        background-image: linear-gradient(105deg,
+        rgba($color-white,.9) 0%,
+        rgba($color-white,.9) 70%,
+        transparent 70%),
+        url('../../static/contact.jpg');
+    
+        
+    }
+    @include respond(tab-port){
+        background-image: linear-gradient(to right,
+        rgba($color-white,.9) 0%,
+        rgba($color-white,.9) 100%),
+        url('../../static/contact.jpg');
+    
+        
+    }
 
     &-form {
         width:50%;
         padding:6rem;
+
+        @include respond(tab-land){
+            width:70%;
+        }
+        @include respond(tab-port){
+            width:100%;
+        }
     }
+
+   
 
 }

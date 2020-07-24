@@ -8,6 +8,11 @@
     font-size: $default-font;
     @include clear-fix;
 
+    @include respond(tab-port){
+        width:100%;
+        padding:1rem;
+    }
+
     &__company {
         float:left;
         width:40%;
@@ -15,12 +20,21 @@
         
         text-align: center;
         padding:3rem;
+        @include respond(tab-port){
+            width:100%;
+            float:none;
+        }
     }
 
     &__detail {
         
         width:60%;
         float:right;
+        @include respond(tab-port){
+            width:100%;
+            float:none;
+            padding:1rem;
+        }
         &_headers{
             padding-bottom:2rem;
             @include clear-fix;
@@ -33,6 +47,8 @@
                 width:50%;
                 text-align: right;
             }
+
+            
         }
             
         
