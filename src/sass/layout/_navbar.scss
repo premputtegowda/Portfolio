@@ -14,6 +14,11 @@
         box-shadow: 0 2rem 4rem rgba($color-black,.8);
         text-align: center;
         outline:none;
+        @include respond(tab-port){
+            top:4rem;
+            right: 4rem;
+
+        }
     }
 
     &__background{
@@ -26,7 +31,13 @@
         top: 6.5rem;
         right: 6.5rem;
         background-image: radial-gradient($color-primary-light,$color-primary);
-        transition: all .8s cubic-bezier(.86, 0, .07, 1)
+        transition: all .8s cubic-bezier(.86, 0, .07, 1);
+
+        @include respond(tab-port){
+            top:4.5rem;
+            right: 4.5rem;
+
+        }
     }
 
     &__background-shown {

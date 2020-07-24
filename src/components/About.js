@@ -11,7 +11,7 @@ function About(){
             </div>
 
             <div className="row">
-                <div className="col-1-of-2">
+                <div className="col-1-of-2 about-me">
                    <h3 className="heading-tertiary u-margin-bottom-small">
                        Coder, Developer
                    </h3>
@@ -25,13 +25,13 @@ function About(){
                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat praesentium consectetur veniam. Omnis rem soluta natus in nihil aliquid laudantium at? Tempore nemo voluptate ratione commodi ducimus obcaecati vero.
                    </p>
 
-                   <a href="/" className="btn-text u-margin-bottom-small">Learn More &rarr;</a>
+                   {/* <a href="/" className="btn-text u-margin-bottom-small">Learn More &rarr;</a> */}
                 </div>
                 <div className="col-1-of-2">
                     <div className="composition">
                         <img src={prem_img} alt="Prem" className="composition__photo composition__photo--p1"/>
-                        <img src={prem_img} alt="Prem" className="composition__photo composition__photo--p2"/>
-                        <img src={prem_img} alt="Prem" className="composition__photo composition__photo--p3"/>
+                        {/* <img src={prem_img} alt="Prem" className="composition__photo composition__photo--p2"/>
+                        <img src={prem_img} alt="Prem" className="composition__photo composition__photo--p3"/> */}
                     </div>
 
                 </div>

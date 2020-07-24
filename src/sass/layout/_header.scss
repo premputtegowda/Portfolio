@@ -5,7 +5,13 @@
     /* background-repeat: cover; */
     background-position: center left;
     position: relative;
+    -webkit-clip-path: polygon(0 0, 100% 0,100% 75vh,0 100%);
     clip-path: polygon(0 0, 100% 0,100% 75vh,0 100%);
+
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0,100% 85vh,0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0,100% 85vh,0 100%);
+    }
 
     .header__logo-container {
         position: absolute;

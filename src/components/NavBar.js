@@ -26,7 +26,7 @@ function NavBar(){
 
                     <li className="navigation__item"><a href="#section-project" className='navigation__link'>Projects</a></li>
 
-                    <li className="navigation__item"><a href="#section-project" className='navigation__link'>Work</a></li>
+                    <li className="navigation__item"><a href="#section-work" className='navigation__link'>Work</a></li>
                     
                     <li className="navigation__item"><a href="#section-contact" className='navigation__link'>Contact Me</a></li>
                 </ul>

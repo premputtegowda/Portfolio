@@ -6,7 +6,7 @@ import Work from './Work'
 function WorkList(){
     console.log("work", jobs)
     return (
-        <section className = 'section-work'>
+        <section className = 'section-work' id='section-work'>
             <div className="u-center-text u-margin-bottom-big">
                 <h2 className="heading-secondary">
                     Work
