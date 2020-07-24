@@ -11,9 +11,9 @@ export default function footer(){
                 <div className="col-1-of-2">
                     <div className="footer__navigation">
                         <ul className="footer__list">
-                            <li className="footer_item"><a href="#" class="footer__link">About Me</a></li>
-                            <li className="footer_item"><a href="#" class="footer__link">Project</a></li>
-                            <li className="footer_item"><a href="#" class="footer__link">Work</a></li>
+                            <li className="footer_item"><a href="/" class="footer__link">About Me</a></li>
+                            <li className="footer_item"><a href="/" class="footer__link">Project</a></li>
+                            <li className="footer_item"><a href="/" class="footer__link">Work</a></li>
                         </ul>
                     </div>
                 </div>
