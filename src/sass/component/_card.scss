@@ -35,6 +35,10 @@
             background-image: linear-gradient(to right bottom, $color-blackish-1,rgba($color-blackish-2,.7));
         }
 
+        &-4 {
+            background-image: linear-gradient(to right bottom, $color-primary-light,rgba($color-primary,.7));
+        }
+
         
 
 
@@ -54,25 +58,30 @@
     }
 
     &__picture {
-        height:15rem;
+        height:25rem;
         background-blend-mode: soft-light;
         -webkit-clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
         clip-path:polygon(0 0, 100% 0,100% 75%, 0 100%);
         background-size:cover;
 
         &-1{
-            background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8)), url('../../static/team_reel.png');
-            background-position: bottom;
-            
+            background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8)), url('../../static/reel.png');
+            background-position: top;
+            width:100%;
            
         }
 
         &-2{
-            background-image: linear-gradient(to right bottom, rgba($color-blue-1,.2),rgba($color-blue-2,.8)), url('../../static/theQueue.png');
+            background-image: linear-gradient(to right bottom, rgba($color-blue-1,.2),rgba($color-blue-2,.8)), url('../../static/queue.png');
            
         }
         &-3{
             background-image: linear-gradient(to right bottom, rgba($color-blackish-1,.2),rgba($color-blackish-2,.8)), url('../../static/game.png');
+           
+        }
+
+        &-4{
+            background-image: linear-gradient(to right bottom, rgba($color-blackish-1,.2),rgba($color-blackish-2,.8)), url('../../static/portfolio.png');
            
         }
     }
@@ -92,7 +101,7 @@
             padding: .5rem .5rem;
             
             &--1{
-                background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8));
+                background-image: linear-gradient(to right bottom, rgba(red,.2),rgba($color-purple-2,.8));
             }
             &--2{
                 background-image: linear-gradient(to right bottom, rgba($color-blue-1,.2),rgba($color-blue-2,.8));
@@ -101,7 +110,7 @@
                 background-image: linear-gradient(to right bottom, rgba($color-blackish-1,.2),rgba($color-blackish-2,.8));
             }
             &--4{
-                background-image: linear-gradient(to right bottom, rgba($color-purple-1,.2),rgba($color-purple-2,.8));
+                background-image: linear-gradient(to right bottom, rgba($color-primary-light,.2),rgba($color-primary-light,.8));
             }
             
         }
@@ -193,4 +202,8 @@
         }
     
     }
+}
+
+.white {
+    color:white;
 }

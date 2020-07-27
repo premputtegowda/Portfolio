@@ -8,7 +8,7 @@ function Project(){
                     Recent Projects
                 </h2>
                 <div className="row">
-                    <div className="col-1-of-4">
+                    <div className="col-1-of-2">
                         <div className="card">
                             
                             <div className="card__side card__side--front">
@@ -24,13 +24,14 @@ function Project(){
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
                                 <div className="card-content">
-                                    <h4 className="heading-tertiary u-margin-bottom-medium">
-                                        Frontend and Backend
+                                    <h4 className="heading-tertiary-white u-margin-bottom-medium">
+                                        Project Lead, Frontend and Backend Developer
                                     </h4>
-                                    <a href="#popup" className="btn btn--white u-margin-bottom-medium">
-                                        Details
+                                    <a href="https://www.alpacavids.com/" target="_blank" className="btn btn--white u-margin-bottom-medium">
+                                        App
                                     </a>
-                                    <a href="https://github.com" className="btn btn--white u-margin-bottom-medium">
+                                    <a href="https://github.com/Lambda-School-Labs/video-journal-for-teams-fe" target="_blank"
+                                    className="btn btn--white u-margin-bottom-medium">
                                         Github
                                     </a>
 
@@ -43,7 +44,7 @@ function Project(){
 
                     {/* 2 */}
 
-                    <div className="col-1-of-4">
+                    <div className="col-1-of-2">
                         <div className="card">
                             
                             <div className="card__side card__side--front">
@@ -54,31 +55,38 @@ function Project(){
                                     <span className="card__heading-span card__heading-span--2">The Queue</span>
                                 </h4>
                                 <p className="card__details">
-                                This app allows Lambda School students to raise their concerns to Lambda School administrators and allows the adminstrators to manage the <resolution></resolution>.
+                                This app allows Lambda School students to raise their concerns to Lambda School administrators and allows the adminstrators to manage the resolution of issues.
                                 </p>
                             </div>
+
                             <div className="card__side card__side--back card__side--back-2">
+
                                 <div className="card-content">
-                                    <h4 className="heading-tertiary u-margin-bottom-medium">
-                                        Frontend
+                                    
+                                    <h4 className="heading-tertiary-white u-margin-bottom-medium">
+                                        Frontend Developer
                                     </h4>
-                                    <a href="#popup" className="btn btn--white u-margin-bottom-medium">
-                                        Details
+                                    <a href="https://queue.bw-dev-desk-queue-1.now.sh/" target="_blank"
+                                    className="btn btn--white u-margin-bottom-medium">
+                                        App
                                     </a>
-                                    <a href="https://github.com" className="btn btn--white u-margin-bottom-medium">
+                                    <a href="https://github.com/BW-Dev-Desk-Queue-1/Front-End"
+                                    target="_blank"
+                                    className="btn btn--white u-margin-bottom-medium">
                                         Github
                                     </a>
 
                                     
                                 </div>
                             </div>
-                        </div>
+                            </div>
                         
+                        </div>
                     </div>
 
                     {/* 3 */}
-
-                    <div className="col-1-of-4">
+                   <div className="row">
+                    <div className="col-1-of-2">
                         <div className="card">
                             
                             <div className="card__side card__side--front">
@@ -95,13 +103,16 @@ function Project(){
                             </div>
                             <div className="card__side card__side--back card__side--back-3">
                                 <div className="card-content">
-                                    <h4 className="heading-tertiary u-margin-bottom-medium">
-                                        Frontend and Backend
+                                    <h4 className="heading-tertiary-white u-margin-bottom-medium">
+                                    Frontend Developer
                                     </h4>
-                                    <a href="#popup" className="btn btn--white u-margin-bottom-medium">
-                                        Details
+                                    <a href="https://master.d1mvw0y7r613h.amplifyapp.com/"
+                                    target="_blank" className="btn btn--white u-margin-bottom-medium">
+                                        App
                                     </a>
-                                    <a href="https://github.com" className="btn btn--white u-margin-bottom-medium">
+                                    <a href="https://github.com/premputtegowda/conways-game-of-life"
+                                    target="_blank" 
+                                    className="btn btn--white u-margin-bottom-medium">
                                         Github
                                     </a>
 
@@ -114,29 +125,33 @@ function Project(){
 
                     {/* 4 */}
 
-                    <div className="col-1-of-4">
-                        <div className="card">
+                    <div className="col-1-of-2">
+                      <div className="card">
                             
                             <div className="card__side card__side--front">
-                                <div className="card__picture card__picture-1">
+                                <div className="card__picture card__picture-4">
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">  
-                                    <span className="card__heading-span card__heading-span--1">Team Reel</span>
+                                    <span className="card__heading-span card__heading-span--1">Portfolio</span>
                                 </h4>
                                 <p className="card__details">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquam ipsam, ut ipsum consequatur veritatis voluptatibus voluptate, repellat, pariatur cum ratione. Cum nisi dignissimos mollitia hic maxime modi, magnam corrupti!
+                                    This is a portfolio app created using react and node.js. This project demonstrates my css/sass skills and animation effects in css. 
                                 </p>
                             </div>
-                            <div className="card__side card__side--back card__side--back-1">
+                            <div className="card__side card__side--back card__side--back-4">
                                 <div className="card-content">
-                                    <h4 className="heading-tertiary u-margin-bottom-medium">
-                                        Frontend and Backend
+                                    <h4 className="heading-tertiary-white u-margin-bottom-medium">
+                                    Frontend and Backend Developer
                                     </h4>
-                                    <a href="#popup" className="btn btn--white u-margin-bottom-medium">
-                                        Details
+                                    <a href="https://premputtegowda.me" 
+                                    target="_blank"
+                                    className="btn btn--white u-margin-bottom-medium">
+                                        App
                                     </a>
-                                    <a href="https://github.com" className="btn btn--white u-margin-bottom-medium">
+                                    <a href="https://github.com/premputtegowda/portfolio" 
+                                    target="_blank"
+                                    className="btn btn--white u-margin-bottom-medium">
                                         Github
                                     </a>
 

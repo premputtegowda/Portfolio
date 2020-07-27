@@ -20,7 +20,7 @@ function Work(props){
                 </h3>
                 </div>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laboriosam quo provident. Aperiam quia facere quam corporis, quod temporibus reiciendis! Pariatur doloremque iusto facere vitae nostrum maiores culpa fugiat enim!
+                    {job.description}
                 </p>
                 
             </div>

@@ -16,13 +16,13 @@ function About(){
                        Coder, Developer
                    </h3>
                    <p className="paragraph">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat praesentium consectetur veniam. Omnis rem soluta natus in nihil aliquid laudantium at? Tempore nemo voluptate ratione commodi ducimus obcaecati vero.
+                       My name is Prem Puttegowda and I am a full stack engineer. I specialize in react front end library and node backend framework. 
                    </p>
                    <h3 className="heading-tertiary u-margin-bottom-small">
-                       Coder, Developer
+                        Generalist, Problem Solver
                    </h3>
                    <p className="paragraph">
-                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis placeat praesentium consectetur veniam. Omnis rem soluta natus in nihil aliquid laudantium at? Tempore nemo voluptate ratione commodi ducimus obcaecati vero.
+                       In the past, I worked as a product manager, Business Analyst, Project Manager and a QA tester. I believe this gives me a new perspective and allow me to come up with creative solutions. 
                    </p>
 
                    {/* <a href="/" className="btn-text u-margin-bottom-small">Learn More &rarr;</a> */}

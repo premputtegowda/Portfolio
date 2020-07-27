@@ -2,23 +2,28 @@ import React, { useState, useEffect } from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import Slide from "@material-ui/core/Slide";
 import axios from "axios";
+import { truncate } from "fs";
 
 const Contact = () => {
-  const [contact, setContact] = useState({
-    name: "",
-    email: "",
-    message: "",
-    nameError: "",
-    emailError: "",
-    messageError: "",
-  });
+    const initialContact = {
+        name: "",
+        email: "",
+        message: "",
+        nameError: "",
+        emailError: "",
+       
+      }
+    const initialTouched = {
+        
+            name: false,
+            email: false,
+            message: false,
+          
+    }
+  const [contact, setContact] = useState(initialContact);
   const [success, setSuccess] = useState(false);
   const [failure, setFailure] = useState(false);
-  const [touched, setTouched] = useState({
-    name: false,
-    email: false,
-    message: false,
-  });
+  const [touched, setTouched] = useState(initialTouched);
 
   const [errors, setErrors] = useState({
     name: "",
@@ -39,18 +44,35 @@ const Contact = () => {
   }, [contact.message]);
 
   function handleSubmit(e) {
+      
     e.preventDefault();
     axios
-      .post("https://portfolio-be-prem.herokuapp.com/api/contacts", contact)
+      .post("https://portfolio-be-prem.herokuapp.com/api/contacts", {name:contact.name, email:contact.email, message:contact.message})
       .then((res) => {
+        
         setSuccess(true);
-        setTimeout(setSuccess(true), 5000);
+        setTouched(initialTouched)
+        setContact(initialContact)
       })
+        
+
       .catch((err) => {
+          console.log("error", err)
         setFailure(true);
-        setTimeout(setSuccess(true), 5000);
+        
       });
+      
   }
+
+  useEffect(()=>{
+    const timer = setTimeout(()=> setSuccess(false), 2000);
+    return () => clearTimeout(timer)
+  },[success])
+
+  useEffect(()=>{
+    const timer = setTimeout(()=> setFailure(false), 2000);
+    return () => clearTimeout(timer)
+  },[failure])
 
   function validateName() {
     if (contact.name.length === 0) {
@@ -60,6 +82,7 @@ const Contact = () => {
     }
   }
   function validateMessage() {
+     
     if (contact.message.length === 0) {
       setContact({ ...contact, messageError: "Message is required" });
     } else {
@@ -88,8 +111,18 @@ const Contact = () => {
 
   const handleChange = (e) => {
     setContact({ ...contact, [e.target.name]: e.target.value });
+    setTouched({...touched, [e.target.name]: true})
   };
+  const isEnabled = (
+                    (touched["name"] && !contact["nameError"]) 
+                    && (touched["email"] && !contact["emailError"])
+                    && (touched["message"] && !contact["messageError"])
+                    
+                    )
 
+    console.log("contact", contact)
+    console.log("success", success)
+        
   return (
     <section className="section-contact" id="section-contact">
       <div className="row">
@@ -156,6 +189,7 @@ const Contact = () => {
                   onChange={handleChange}
                   onFocus={validateMessage}
                   onBlur={handleBlur}
+                  value={contact.message}
                 ></textarea>
                 <label htmlFor="message" className="form-label">
                   Message
@@ -166,13 +200,14 @@ const Contact = () => {
                 <button
                   className="btn btn--black u-margin-bottom-medium"
                   onClick={handleSubmit}
+                  disabled={!isEnabled}
                 >
                   Send
                 </button>
               </div>
-              {console.log("success", success)}
-              {console.log("contact", contact)}
-              {success ? <div> hello </div> : ""}
+              
+              {success ? <div className="success"> Thanks for reaching out. I will be in touch shortly! </div> : ""}
+              {failure ? <div className="failure"> Something went wrong. Please email pkpgowda@gmail.com </div> : ""}
             </form>
           </div>
         </div>
