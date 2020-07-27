@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../static/prem_logo.png'
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function footer(){
     return(
@@ -7,6 +9,31 @@ export default function footer(){
             <div className="footer__logo-box">
                 <img src={Logo} alt="Prem logo" className='footer__logo'/>
             </div>
+
+            <div >
+                
+              <div className="footer__flex-display">
+                  
+                       <div>
+                            <a href="https://www.linkedin.com/in/premkrishna/" target="_blank">
+                                <i className="footer__icon footer__log-box--icon"> <FaLinkedin /> </i>
+                            </a>
+                       </div>
+             
+                    
+                        <div>
+                            <a href="https://github.com/premputtegowda" target="_blank">
+                                <i className="footer__icon"> <FaGithubSquare /> </i>
+                            </a>
+                        </div>
+                </div>
+                
+                
+                
+
+            </div>
+
+            
             <div className="row">
                 {/* <div className="col-1-of-2"> */}
                     <div className="footer__navigation">
@@ -26,7 +53,7 @@ export default function footer(){
                 {/* <div class="col-1-of-2">
                     <p class="footer__copyright">
                         
-                        Copyright &copy; by Prem Krishna Puttegowda.
+                        Copyright &copy; by Prem Krishna Puttegowda. All rights reserved
                     </p>
                 </div> */}
             </div>

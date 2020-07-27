@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import Slide from "@material-ui/core/Slide";
 import axios from "axios";
-import { truncate } from "fs";
+
+
 
 const Contact = () => {
     const initialContact = {
@@ -204,6 +205,11 @@ const Contact = () => {
                 >
                   Send
                 </button>
+                
+                
+               
+                
+                
               </div>
               
               {success ? <div className="success"> Thanks for reaching out. I will be in touch shortly! </div> : ""}

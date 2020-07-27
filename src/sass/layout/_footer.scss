@@ -7,6 +7,7 @@
     &__logo-box {
         text-align:center;
         margin-bottom:8rem;
+        
     }
 
     &__logo {
@@ -59,6 +60,14 @@
         width: 80%;
         float: right;
     }
-
+    &__icon{
+        font-size:6rem;
+        color:$color-black;
+    }
+    &__flex-display{
+        display:flex;
+        justify-content: center;
+    }
     
 }
+
