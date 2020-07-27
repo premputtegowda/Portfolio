@@ -16,7 +16,7 @@ function About(){
                        Coder, Developer
                    </h3>
                    <p className="paragraph">
-                       My name is Prem Puttegowda and I am a full stack engineer. I specialize in react front end library and node backend framework. 
+                       My name is Prem Puttegowda and I am a fullstack engineer. I specialize in react front end library and node backend framework. 
                    </p>
                    <h3 className="heading-tertiary u-margin-bottom-small">
                         Generalist, Problem Solver
