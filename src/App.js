@@ -19,6 +19,8 @@ import './sass/main.scss';
 
 
 function App() {
+
+    document.title = "Prem Puttegowda";
   
   return (
     
