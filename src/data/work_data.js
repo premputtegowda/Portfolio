@@ -15,19 +15,19 @@
         company: "At&t Inc.",
         title: "Lead Business Analyst/Project Manager",
         date:"September 2010 - Aug 20129",
-        description:"At AT&T, I developed product and system requirements for a construction management app. I also managed the large user base to succesful complete the user acceptance testing."
+        description:"At AT&T, I developed product and system requirements for a construction management app. I also managed the large user base to succesfully complete user acceptance testing."
     },
     {   
         company: "eBay Inc.",
         title: "Product Manager",
         date:"Feb 2008 - Sept 2010",
-        description:"As a site operation team product manager, I was responsible for building tools that allowed the site operation teams and network operation center to troubleshoot the site issues and strealine their operation"
+        description:"As a site operation team product manager, I was responsible for building tools that allowed the site operation teams and network operation center to troubleshoot site issues and streamline their operations"
     },
     {   
         company: "Mercury Insurance Group.",
         title: "Business Analyst",
         date:"Oct 2006 - Feb 2008",
-        description:"At Mercury Insurance Group, I developed underwriting use cases for an insurance application. I also performed the quality insurance testing, and user acceptance testing on this project"
+        description:"At Mercury Insurance Group, I developed underwriting use cases for an insurance application. I also performed quality insurance and user acceptance testing on this project"
     },
     ]
 

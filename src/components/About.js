@@ -22,7 +22,7 @@ function About(){
                         Generalist, Problem Solver
                    </h3>
                    <p className="paragraph">
-                       In the past, I worked as a product manager, business analyst, project manager and a tester. I believe this gives me a new perspective and allow me to come up with creative solutions. 
+                       In the past, I worked as a product manager, business analyst, project manager and a tester. I believe this gives me a well rounded perspective that allows me to come up with creative solutions. 
                    </p>
 
                    {/* <a href="/" className="btn-text u-margin-bottom-small">Learn More &rarr;</a> */}

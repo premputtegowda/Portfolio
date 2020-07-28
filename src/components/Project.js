@@ -19,7 +19,7 @@ function Project(){
                                     <span className="card__heading-span card__heading-span--1">Team Reel</span>
                                 </h4>
                                 <p className="card__details">
-                                   Team Reel( formerly Alpaca videos) is a video platform that enables users to upload video of their performance and obtain feedback from team members and mentors
+                                   Team Reel( formerly Alpaca videos) is a video platform that enables users to upload videos of their performance and obtain feedback from team members and mentors
                                 </p>
                             </div>
                             <div className="card__side card__side--back card__side--back-1">
@@ -55,7 +55,7 @@ function Project(){
                                     <span className="card__heading-span card__heading-span--2">The Queue</span>
                                 </h4>
                                 <p className="card__details">
-                                This app allows Lambda School students to raise their concerns to Lambda School administrators and allows the adminstrators to manage the resolution of issues.
+                                This app allows Lambda School students to report their concerns/issues to Lambda School administrators and allows the adminstrators to manage the resolution of those issues.
                                 </p>
                             </div>
 
