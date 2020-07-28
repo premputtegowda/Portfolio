@@ -133,7 +133,7 @@ function Project(){
                                     &nbsp;
                                 </div>
                                 <h4 className="card__heading">  
-                                    <span className="card__heading-span card__heading-span--1">Portfolio</span>
+                                    <span className="card__heading-span card__heading-span--4">Portfolio</span>
                                 </h4>
                                 <p className="card__details">
                                     This is a portfolio app created using react and node.js. This project demonstrates my css/sass skills and animation effects in css. 
