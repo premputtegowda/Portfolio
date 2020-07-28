@@ -51,9 +51,10 @@ const Contact = () => {
       .post("https://portfolio-be-prem.herokuapp.com/api/contacts", {name:contact.name, email:contact.email, message:contact.message})
       .then((res) => {
         
-        setSuccess(true);
-        setTouched(initialTouched)
         setContact(initialContact)
+        setTouched(initialTouched)
+        setSuccess(true);
+        
       })
         
 
