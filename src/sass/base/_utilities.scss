@@ -6,4 +6,11 @@
 
 .error {
     color:red;
+    opacity:1;
+    transition: all .1s ease;
+    height:0;
+    &--showing {
+        height:3rem;
+
+    }
 }

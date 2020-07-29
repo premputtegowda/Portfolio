@@ -50,6 +50,7 @@ const Contact = () => {
     axios
       .post("https://portfolio-be-prem.herokuapp.com/api/contacts", {name:contact.name, email:contact.email, message:contact.message})
       .then((res) => {
+          console.log("api", "hello")
         
         setContact(initialContact)
         setTouched(initialTouched)
@@ -134,11 +135,11 @@ const Contact = () => {
               <div className="u-margin-bottom-medium">
                 <h2 className="heading-secondary">Contact</h2>
               </div>
-              <p className="error">
+              <div className="error error--showing">
                 {contact["nameError"] && touched["name"]
-                  ? contact.nameError
+                  ? <div>{contact.nameError}</div>
                   : ""}
-              </p>
+              </div>
               <div className="form-group">
                 <input
                   type="text"
@@ -155,11 +156,11 @@ const Contact = () => {
                   Name
                 </label>
               </div>
-              <p className="error">
+              <div className="error error--showing">
                 {contact["emailError"] && touched["email"]
-                  ? contact.emailError
+                  ? <div>{contact.emailError}</div>
                   : ""}
-              </p>
+              </div>
               <div className="form-group">
                 <input
                   type="text"
@@ -176,12 +177,11 @@ const Contact = () => {
                   Email
                 </label>
               </div>
-
-              <p className="error">
+              <div className="error error--showing">
                 {contact["messageError"] && touched["message"]
-                  ? contact.messageError
+                  ? <div>{contact.messageError}</div>
                   : ""}
-              </p>
+              </div>
               <div className="form-group">
                 <textarea
                   name="message"
@@ -213,8 +213,16 @@ const Contact = () => {
                 
               </div>
               
-              {success ? <div className="success"> Thanks for reaching out. I will be in touch shortly! </div> : ""}
-              {failure ? <div className="failure"> Something went wrong. Please email pkpgowda@gmail.com </div> : ""}
+              <div className={`flash-message {success ? "flash-message--showing"}`}>
+                  { success ? 
+                  <div className="flash-message--success flash-message--message">
+                      Thanks for reaching out. I will be in touch shortly!
+                  </div> : ''
+                  
+                    }
+                </div>
+                   
+             
             </form>
           </div>
         </div>

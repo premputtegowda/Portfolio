@@ -1,11 +1,30 @@
-.success {
+.flash-message {
     width:80%;
-    background:lightgreen;
-    color:$color-black;
-    margin:0 auto;
-    padding:.5rem;
+    background-color: $color-grey-light;
+    
+    text-align: center;
     border-radius:3px;
-    animation: alertDisplay 2s ease-out 2s;
+    bottom: 2rem;
+    left:0;
+    height:0;
+    transition: all .5s ease;
+    
+    
+
+    &--showing{
+      height:3rem;
+      box-shadow:0rem 2rem 4rem rgba($color-black,0.8);
+    }
+
+    &--message {
+        display: inline-block;
+        padding: 1rem;
+        border-radius: 0 0 4px 4px;
+    }
+    &--success {
+        background-color: $color-grey-light;
+    }
+   
 }
 
 .failure {
