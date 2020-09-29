@@ -157,9 +157,8 @@ const Contact = () => {
                 </label>
               </div>
               <div className="error error--showing">
-                {contact["emailError"] && touched["email"]
-                  ? <div>{contact.emailError}</div>
-                  : ""}
+                {(contact["emailError"] && touched["email"])
+                  && <div>{contact.emailError}</div>}
               </div>
               <div className="form-group">
                 <input
@@ -208,19 +207,16 @@ const Contact = () => {
                 </button>
                 
                 
-               
-                
-                
               </div>
               
-              <div className={`flash-message {success ? "flash-message--showing"}`}>
+              {/* <div className={`flash-message {success ? "flash-message--showing"}`}>
                   { success ? 
                   <div className="flash-message--success flash-message--message">
                       Thanks for reaching out. I will be in touch shortly!
                   </div> : ''
                   
                     }
-                </div>
+                </div> */}
                    
              
             </form>

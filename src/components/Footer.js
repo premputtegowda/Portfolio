@@ -35,7 +35,7 @@ export default function footer(){
 
             
             <div className="row">
-                {/* <div className="col-1-of-2"> */}
+                
                     <div className="footer__navigation">
                         <ul className="footer__list">
                             <li className="footer_item"><a href="#section-about" class="footer__link">About Me</a></li>
@@ -49,13 +49,8 @@ export default function footer(){
                             <li className="footer_item"><a href="#section-contact" class="footer__link">Contact</a></li>
                         </ul>
                     </div>
-                {/* </div> */}
-                {/* <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        
-                        Copyright &copy; by Prem Krishna Puttegowda. All rights reserved
-                    </p>
-                </div> */}
+             
+                
             </div>
         </footer>
     )

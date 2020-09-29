@@ -32,7 +32,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    height:100vh;
 }
 ol, ul {
 	list-style: none;
@@ -60,7 +61,7 @@ table {
 html {
     font-size:62.5%;
     scroll-behavior: smooth;
-    height:100%;
+    
 
     
     
@@ -97,7 +98,8 @@ body {
     color: #777;
     padding: 3rem;
     box-sizing: border-box;
-    min-height: 100%;
+    overflow-x:hidden;
+    
 
     @include respond(tab-port){
         padding:0;
